@@ -3,7 +3,7 @@ import { Text, TextInput, View, TouchableOpacity, Image, ScrollView } from "reac
 import { styles } from "@/styles/_joinstyle";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
-import { HEROLOGO, GOOGLELOGO, FACEBOOKLOGO } from "@/constants";
+import { HEROLOGO, GOOGLELOGO, FACEBOOKLOGO, HEROLOGOGREEN } from "@/constants";
 import { useRouter } from "expo-router";
 
 export default function Join() {
@@ -17,7 +17,7 @@ export default function Join() {
 
         <View style={styles.iconsection}>
           <Ionicons name="arrow-back" size={25} onPress={() => router.back()} />
-          <Image source={HEROLOGO} style={{ tintColor: "#009966" }}/>
+          <Image source={HEROLOGOGREEN} style={{ tintColor: "#009966" }}/>
         </View>
 
         <View style={styles.titleTextGroup}>
